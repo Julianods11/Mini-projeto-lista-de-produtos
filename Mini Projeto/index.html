@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Produtos - Projeto DNC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/025266c965.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+     <div><img src="logo dnc.png" alt=""></div>
+     <div class="title"><h1 id="title"> Controle de Produtos </h1></div>    
+    </header>
+    <section>
+        <div id="titles">
+            <h1>Produtos</h1>
+            <h2>Lista de Produtos</h2>
+        </div>
+        <div id="cadastro">
+            <div id="form">
+
+                <div id="itens">
+                
+                <label for="produto">Produto</label>
+                <input type="text" name="produto" id="pdt" placeholder="Nome do Produto">
+
+                <label for="valor" id="valor1">Valor</label>
+                <input type="text" name="valor" id="preco" placeholder="R$ 00.00">
+                
+                    
+                </div>
+
+                <div id="buttons">
+
+                <button onclick="produto.Adicionar()">Adicionar</button>
+                <button onclick="produto.Cancelar()">Cancelar</button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <div id="tabela">
+            <table border="1">
+                <thead>
+                    <th>ID</th>
+                    <th>Produto</th>
+                    <th>Valor</th>
+                    <th>Remover</th>
+                </thead>
+                <tbody id="tbody">
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+
+
+
+    <script src="config.js"></script>
+</body>
+</html>
